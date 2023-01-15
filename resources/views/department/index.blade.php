@@ -1,4 +1,4 @@
-@extends('layout1')
+@extends('layout')
 @section('title','كل الأقسام')
 @section('content')
 <div class="card mb-4 mt-4">
@@ -8,7 +8,7 @@
                                 <a href="{{url('depart/create')}}" class="float-end btn btn-sm btn-green">قسم جديد</a>
                             </div>
                             <div class="card-body">
-                                <table id="datatablesSimple" class="table table-bordered">
+                                <table id="datatablesSimple" class="table   table-striped">
                                     <thead>
                                         <tr>
                                             <th>الرقم</th>
@@ -29,11 +29,24 @@
 	                                        <tr>
 	                                            <td>{{$d->id}}</td>
 	                                            <td>{{$d->title}}</td>
-                                                <td>
-                                                    <a href="{{url('depart/'.$d->id)}}" class="btn btn-green btn-sm">عرض</a>
-                                                    <a href="{{url('depart/'.$d->id.'/edit')}}" class="btn btn-green btn-sm">تعديل</a>
-                                                    <a onclick="return confirm('هل أنت متأكد من مسح البيانات؟')" href="{{url('depart/'.$d->id.'/delete')}}" class="btn btn-green btn-sm">مسح</a>
+
+                                                <td >
+                                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href=""
+                                                    role="button" aria-expanded="true"><i class="fas fa-ellipsis-v"></i></a>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item"href="{{url('depart/'.$d->id)}}" class="btn btn-green btn-sm">عرض</a></li>
+                                                    <li><a class="dropdown-item"href="{{url('depart/'.$d->id.'/edit')}}" class="btn btn-green btn-sm">تعديل</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" onclick="return confirm('هل أنت متأكد من مسح البيانات؟')" href="{{url('depart/'.$d->id.'/delete')}}" class="btn btn-green btn-sm">مسح</a>
+
+                                                    </li>
+                                                  </ul>
                                                 </td>
+
+
+
+
 
 	                                        </tr>
 	                                        @endforeach
@@ -44,9 +57,6 @@
                         </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="{{asset('public')}}/js/scripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-<script src="{{asset('public')}}/js/datatables-simple-demo.js"></script>
+
 
 @endsection

@@ -1,4 +1,4 @@
-@extends('layout1')
+@extends('layout')
 @section('title','كل الموظفين')
 @section('content')
 <div class="card mb-4 mt-4">
@@ -38,10 +38,18 @@
                                                 <td>{{$d->full_name}}</td>
                                                 <td><img src="{{asset('public/images/'.$d->photo)}}" width="80" /></td>
                                                 <td>{{$d->address}}</td>
-                                                <td>
-                                                    <a href="{{url('employee/'.$d->id)}}" class="btn btn-green btn-sm">عرض</a>
-                                                    <a href="{{url('employee/'.$d->id.'/edit')}}" class="btn btn-green btn-sm">تعديل</a>
-                                                    <a onclick="return confirm('هل أنت متاكد من حذف البيانات ؟')" href="{{url('employee/'.$d->id.'/delete')}}" class="btn btn-green btn-sm">حذف</a>
+                                                <td >
+                                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href=""
+                                                    role="button" aria-expanded="true"><i class="fas fa-ellipsis-v"></i></a>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item"href="{{url('employee/'.$d->id)}}" class="btn btn-green btn-sm">عرض</a></li>
+                                                    <li><a class="dropdown-item"href="{{url('employee/'.$d->id.'/edit')}}" class="btn btn-green btn-sm">تعديل</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" onclick="return confirm('هل أنت متأكد من مسح البيانات؟')" href="{{url('employee/'.$d->id.'/delete')}}" class="btn btn-green btn-sm">مسح</a>
+
+                                                    </li>
+                                                  </ul>
                                                 </td>
 	                                        </tr>
 	                                        @endforeach
@@ -52,9 +60,6 @@
                         </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script src="{{asset('public')}}/js/scripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-<script src="{{asset('public')}}/js/datatables-simple-demo.js"></script>
+
 
 @endsection

@@ -86,6 +86,7 @@
               </ul>
             </td>
 
+
           </tr>
           <tr data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
           aria-controls="offcanvasExample">
@@ -105,6 +106,7 @@
                 <li><a class="dropdown-item" href="#"> تعديل</a></li>
               </ul>
             </td>
+
 
           </tr>
         </tbody>

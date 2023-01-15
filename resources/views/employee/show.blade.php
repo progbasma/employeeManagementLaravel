@@ -1,4 +1,4 @@
-@extends('layout1')
+@extends('layout')
 @section('title','View Employee')
 @section('content')
 <div class="card mb-4 mt-4">
