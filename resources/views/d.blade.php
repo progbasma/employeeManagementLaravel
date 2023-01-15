@@ -1,4 +1,4 @@
-@extends('layout1')
+@extends('layout')
 @section('title','all Documents')
 @section('content')
 
