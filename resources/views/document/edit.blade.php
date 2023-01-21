@@ -64,7 +64,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" class="btn btn-primary" value="Submit" />
+                        <input type="submit" class="btn btn-primary" value="تعديل" />
                     </td>
                 </tr>
             </table>
