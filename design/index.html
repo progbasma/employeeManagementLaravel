@@ -1,0 +1,289 @@
+
+  <!doctype html>
+  <html lang="ar" dir="rtl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>قالب لوحة القيادة · Bootstrap v5.0</title>
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/dashboard.rtl.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-3 sidemenu ">
+          <nav id="sidebarMenu" class="shadow col-lg-2 pt-4 d-md-block bg-white sidebar collapse">
+            <img src="image/g-logo.png" class="nav-link" alt="" srcset="">
+            <div class="position-sticky pt-3">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="dashboard.html">
+                    <i class="bi bi-house"></i>
+                    الرئيسية
+                  </a>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                <span>عرض الموظفين </span>
+                <a class="link-secondary" href="#" aria-label="إضافة تقرير جديد">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="employess.html">
+                    <i class="bi bi-person"></i>
+                    الموظفين
+                  </a>
+                </li>
+              </ul>
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                <span>التقارير المحفوظة</span>
+                <a class="link-secondary" href="#" aria-label="إضافة تقرير جديد">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">
+                    <i class="bi bi-person"></i>
+                    شخصي
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">
+                    <i class="bi bi-file-earmark-text"></i>
+                    البيانات الوظيفية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">
+                    <i class="bi bi-credit-card"></i>
+                    التفاصيل المالية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">
+                    <i class="bi bi-file-zip"></i>
+                    المستندات
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="profile.html">
+                    <i class="bi bi-box-seam"></i>
+                    العهد
+                  </a>
+                </li>
+              </ul>
+
+
+
+              <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                <span>التقارير المحفوظة</span>
+                <a class="link-secondary" href="#" aria-label="إضافة تقرير جديد">
+                  <span data-feather="plus-circle"></span>
+                </a>
+              </h6>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="Attendees.html">
+                    <i class="bi bi-calendar2-check"></i>
+                    سجلات الحضور
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="holiday.html">
+                    <i class="bi bi-calendar-x"></i>
+                    الأجازات
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3 bg-gray">
+
+          <nav class="navbar topmenu navbar-expand-lg navbar-light bg-white shadow rounded-2 mb-4">
+            <div class="container-fluid">
+              <div class="d-flex align-items-center">
+                <img src="image/user.png" class="me-3" alt="" srcset="">
+                <div class="me-3 d-inline-flex flex-column">
+                  <span>
+                    هناء حسين علي
+                  </span>
+                  <span>
+                    مطور وجهات
+                  </span>
+                </div>
+                <!-- <div class="d-sm-flex d-none user-nav">
+                  <p class="user-name font-weight-bolder mb-0"> John Doe </p><span class="user-status">admin</span>
+                </div> -->
+                <i class="fa-solid fa-sliders me-3"></i>
+                <i class="far fa-bell me-3"></i>
+                <i class="far fa-moon me-3"></i>
+              </div>
+              <div>
+                <i class="fas fa-language"></i>
+              </div>
+
+              <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="عرض/إخفاء لوحة التنقل">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+            </div>
+          </nav>
+
+
+
+          <div class="row">
+            <div class="col-md-12 mb-4 position-relative">
+              <h5 class="fw-bold mb-0">
+            المستندات
+              </h5>
+
+              <nav style="--bs-breadcrumb-divider: '>';" class="my-bread mb-0" aria-label="breadcrumb">
+                <ol class="breadcrumb  mb-0">
+                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                  <li class="breadcrumb-item active" aria-current="page"> المستندات
+                  </li>
+                </ol>
+              </nav>
+            </div>
+    
+
+
+            <div class="col-md-12">
+              
+
+
+              <div class="data_table bg-white mb-4 rounded-3 shadow  py-4">
+
+                <h5 class="m-4">
+                  مستندات الموظف
+
+
+
+                </h5>
+    
+    
+                <table class="table   table-striped ">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                          الأسم   
+                      </th>
+                      <th scope="col">  تاريخ الانتهاء 
+                      </th>
+                      <th scope="col">الوصف</th>
+                      <th scope="col">النوع</th>
+                      <th scope="col">العمليات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                      <td data-label="الأسم"> قرار اداري       
+                      </td>
+                      <td data-label=" الانتهاء ">
+                       --
+                      </td>
+                      <td data-label="الوصف">-- </td>
+                      <td data-label="النوع"><a href="https://www.trafficksa.com/public/site/files/traffic-profile.pdf" target="blank" class="pdf">
+                        <i class="far fa-file-pdf fa-lg" aria-hidden="true"></i>  </a></td>
+    
+                        <td data-label="العمليات"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                          role="button" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"> حذف </a></li>
+                          <li><a class="dropdown-item" href="#"> تعديل</a></li>
+                        </ul>
+                      </td>
+                   
+                    </tr>
+                    <tr data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                      <td data-label="الأسم"> الهويه و الاقامة        
+                      </td>
+                      <td data-label=" الانتهاء ">
+                       --
+                      </td>
+                      <td data-label="الوصف">-- </td>
+                      <td data-label="النوع"><a href="https://www.trafficksa.com/public/site/files/traffic-profile.pdf" target="blank" class="pdf">
+                        <i class="far fa-file-pdf fa-lg" aria-hidden="true"></i>  </a></td>
+    
+                        <td data-label="العمليات"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                          role="button" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"> حذف </a></li>
+                          <li><a class="dropdown-item" href="#"> تعديل</a></li>
+                        </ul>
+                      </td>
+                   
+                    </tr>
+                    <tr data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                      <td data-label="الأسم"> عقد العمل        
+                      </td>
+                      <td data-label=" الانتهاء ">
+                       --
+                      </td>
+                      <td data-label="الوصف">-- </td>
+                      <td data-label="النوع"><a href="https://www.trafficksa.com/public/site/files/traffic-profile.pdf" target="blank" class="pdf">
+                        <i class="far fa-file-pdf fa-lg" aria-hidden="true"></i>  </a></td>
+    
+                        <td data-label="العمليات"> <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                          role="button" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"> حذف </a></li>
+                          <li><a class="dropdown-item" href="#"> تعديل</a></li>
+                        </ul>
+                      </td>
+                   
+                    </tr>
+                  </tbody>
+                </table>
+               
+        
+    
+              </div>
+    
+          
+
+
+            </div>
+
+
+          </div> <!-- end col-9 -->
+        </div>
+      </div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        integrity="sha384-EbSscX4STvYAC/DxHse8z5gEDaNiKAIGW+EpfzYTfQrgIlHywXXrM9SUIZ0BlyfF" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha384-i+dHPTzZw7YVZOx9lbH5l6lP74sLRtMtwN2XjVqjf3uAGAREAF4LMIUDTWEVs4LI" crossorigin="anonymous">
+      </script>
+      <script src="https://kit.fontawesome.com/798745816a.js" crossorigin="anonymous"></script>
+  </body>
+
+  </html>
